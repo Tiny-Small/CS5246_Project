@@ -174,3 +174,4 @@ cython_debug/
 z_ignore/
 **/.env
 huggingface_models/
+0_CJ_model/saved_models/
