@@ -1,0 +1,16 @@
+{
+  "mode": "train",
+  "epochs": 100,
+  "batch_size": 4,
+  "lr": 2e-05,
+  "max_span_len": 8,
+  "aspect_sentiment_only": true,
+  "data_folder": "/path/CS5246/data",
+  "data_file": "final_df6",
+  "checkpoint_path": "/path/CS5246/span_aste/checkpoints/Exp02B",
+  "checkpoint_filepath": "",
+  "log_dir": "/path/CS5246/span_aste/logs/Exp02B",
+  "log_naming": "Dataset2_final_df6_Exp02B",
+  "gamma": 2.0,
+  "seed": 42
+}
