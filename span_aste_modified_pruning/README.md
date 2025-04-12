@@ -1,6 +1,6 @@
-# Span-ASTE (Original)
+# Span-ASTE (Modified Pruning)
 
-This directory contains the implementation of the original **Aspect Sentiment Triplet Extraction (ASTE)** model proposed by Xu et al. (2021), which performs **end-to-end** extraction of **(aspect, opinion, emotion) triplets** from user comments.
+This directory contains an implementation based on Xu et al. (2021), with a simplified pruning strategy using negative and random sampling. The model performs end-to-end extraction of (aspect, opinion, emotion) triplets from user comments
 
 ## Overview
 
