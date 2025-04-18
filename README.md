@@ -22,8 +22,9 @@ The repository features five main components:
 
 | Folder | Description |
 |--------|-------------|
-| `data` | Contains the datasets used in our evaluations, including raw, cleaned, and annotated versions. |
+| `scraping` | Scripts for scraping Reddit comments used in the dataset. |
 | `preprocessing/` | Data cleaning, GPT annotation scripts, slang normalization, and manual vetting routines. |
+| `data` | Contains the datasets used in our evaluations, including raw, cleaned, and annotated versions. |
 | `ner/` | Codes for pretrained (e.g., spaCy, BERT-NER) and fine-tuned NER models. |
 | `bert_emotion_classifier/` | BERT-based masked/unmasked emotion classification using entity-aware inputs. |
 | `span_aste_modified_pruning/` | Full ASTE pipeline with span classification, simplified pruning, and triplet prediction. |
@@ -34,19 +35,21 @@ The repository features five main components:
 Each folder contains its own `README.md` with setup instructions, training scripts, and parameters explanations.
 
 ```bash
+cd scraping/
+# Scrape Reddit comments
+
 cd preprocessing/
-# Run data cleaning or GPT-based annotation
+# Clean, segment, and annotate comments using GPT and heuristic rules
 
 cd ner/
-# Evaluate or train NER models
+# Evaluate or fine-tune NER models (spaCy, BERT-NER)
 
-cd bert_emotion_classifier/
-# Train masked or unmasked BERT emotion classifier
-
-cd span_aste/
-# Train or evaluate ASTE without opinion spans
+cd emotion_classifier/
+# Train or evaluate masked/unmasked BERT-based emotion classifiers
 
 cd span_aste_modified_pruning/
-# Train or evaluate full ASTE with simplified pruning
+# Train or evaluate full ASTE model with simplified pruning strategy
 
+cd span_aste/
+# Train or evaluate ASTE model (no opinions, simplified pruning)
 ```
