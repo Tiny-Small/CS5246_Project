@@ -22,9 +22,10 @@ The repository features five main components:
 
 | Folder | Description |
 |--------|-------------|
+| `data` | Contains the datasets used in our evaluations, including raw, cleaned, and annotated versions. |
 | `preprocessing/` | Data cleaning, GPT annotation scripts, slang normalization, and manual vetting routines. |
 | `ner/` | Codes for pretrained (e.g., spaCy, BERT-NER) and fine-tuned NER models. |
-| `emotion_classifier/` | BERT-based masked/unmasked emotion classification using entity-aware inputs. |
+| `bert_emotion_classifier/` | BERT-based masked/unmasked emotion classification using entity-aware inputs. |
 | `span_aste_modified_pruning/` | Full ASTE pipeline with span classification, simplified pruning, and triplet prediction. |
 | `span_aste/` | Simplified ASTE without opinion spans; optimized for noisy, informal input. |
 
@@ -39,7 +40,7 @@ cd preprocessing/
 cd ner/
 # Evaluate or train NER models
 
-cd emotion_classifier/
+cd bert_emotion_classifier/
 # Train masked or unmasked BERT emotion classifier
 
 cd span_aste/
