@@ -14,6 +14,9 @@ A modular pipeline for extracting and classifying emotion-labeled entities from 
 
 - **Span-ASTE without opinions (span_aste folder)**: A streamlined variant that skips opinion extraction and directly classifies (aspect, emotion) pairs — better suited for noisy, informal social text.
 
+**Note:** Some of the data files may have undergone minor header adjustments during development.
+If you encounter errors when running the preprocessing scripts, please verify the column headers in the data files and adjust accordingly.
+
 ## Repository Structure
 
 | Folder | Description |
