@@ -2,7 +2,7 @@
 
 > **TL;DR**: A modular pipeline for extracting aspect–emotion pairs from Facebook and Reddit comments using span-based models. Includes full and simplified ASTE implementations + GPT-powered preprocessing.
 
-🧩 This repo covers my part of the CS5246 group project — mainly the span-based models for aspect–emotion extraction, along with data preprocessing scripts.
+🧩 This repo covers the span-based models for aspect–emotion extraction, along with data preprocessing scripts.
 
 Other parts of the project, like data scraping, NER, or emotion classifier baselines, were handled separately and aren’t included here.
 
