@@ -1,0 +1,110 @@
+Job started at: Sat Apr 12 01:56:54 PM +08 2025
+Activating virtual environment...
+venv activated.
+Python version: 3.10.12 (main, Feb  4 2025, 14:57:36)
+Environment loaded successfully
+[DEBUG] Number of classes: 8
+
+Evaluating on test dataset:
+[DEBUG] Total gold aspect spans: 71
+[DEBUG] Total gold opinion spans: 26435
+[DEBUG] Total predicted aspect spans: 1566
+[DEBUG] Total predicted opinion spans: 24940
+
+==No Drop Invalids==
+
+Mention Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.0358    0.7887    0.0684        71
+           1     0.9994    0.9429    0.9703     26435
+
+    accuracy                         0.9425     26506
+   macro avg     0.5176    0.8658    0.5194     26506
+weighted avg     0.9968    0.9425    0.9679     26506
+
+
+Triplet Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.4444    0.4444    0.4444         9
+           1     0.5000    0.7143    0.5882         7
+           2     0.7143    0.5556    0.6250         9
+           3     0.3333    0.3750    0.3529         8
+           4     0.7143    0.5556    0.6250         9
+           5     0.6667    0.5000    0.5714         8
+           6     0.2500    0.3333    0.2857         6
+
+    accuracy                         0.5000        56
+   macro avg     0.5176    0.4969    0.4990        56
+weighted avg     0.5332    0.5000    0.5085        56
+
+
+Micro F1 on Triplet Extraction:
+Precision: 0.5000 | Recall: 0.3944 | F1: 0.4409
+
+==Drop Invalids from Gold Target==
+
+Mention Classification Report:
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7887    0.8819        71
+           1     0.0000    0.0000    0.0000         0
+
+    accuracy                         0.7887        71
+   macro avg     0.5000    0.3944    0.4409        71
+weighted avg     1.0000    0.7887    0.8819        71
+
+
+Triplet Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.4444    0.4444    0.4444         9
+           1     0.5000    0.7143    0.5882         7
+           2     0.7143    0.5556    0.6250         9
+           3     0.3333    0.3750    0.3529         8
+           4     0.7143    0.5556    0.6250         9
+           5     0.6667    0.5000    0.5714         8
+           6     0.2500    0.3333    0.2857         6
+
+    accuracy                         0.5000        56
+   macro avg     0.5176    0.4969    0.4990        56
+weighted avg     0.5332    0.5000    0.5085        56
+
+
+Micro F1 on Triplet Extraction:
+Precision: 0.5000 | Recall: 0.3944 | F1: 0.4409
+
+==Drop Invalids from Gold Target and Pred==
+
+Mention Classification Report:
+              precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        56
+
+    accuracy                         1.0000        56
+   macro avg     1.0000    1.0000    1.0000        56
+weighted avg     1.0000    1.0000    1.0000        56
+
+
+Triplet Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.4444    0.4444    0.4444         9
+           1     0.5000    0.7143    0.5882         7
+           2     0.7143    0.5556    0.6250         9
+           3     0.3333    0.3750    0.3529         8
+           4     0.7143    0.5556    0.6250         9
+           5     0.6667    0.5000    0.5714         8
+           6     0.2500    0.3333    0.2857         6
+
+    accuracy                         0.5000        56
+   macro avg     0.5176    0.4969    0.4990        56
+weighted avg     0.5332    0.5000    0.5085        56
+
+
+Micro F1 on Triplet Extraction:
+Precision: 0.5000 | Recall: 0.3944 | F1: 0.4409
+Job completed.
+Job ended at: Sat Apr 12 01:57:08 PM +08 2025
+Job Duration: 0 hours 0 minutes 14 seconds

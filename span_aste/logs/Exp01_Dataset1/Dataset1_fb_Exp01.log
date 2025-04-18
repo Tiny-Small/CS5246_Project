@@ -1,0 +1,5 @@
+Epoch 1 / 100 | Loss: 312.9495 | Mention Loss: 0.5622 | Aspect Loss: 312.3873
+Epoch 2 / 100 | Loss: 126.7452 | Mention Loss: 0.4113 | Aspect Loss: 126.3339
+Epoch 3 / 100 | Loss: 27.0498 | Mention Loss: 0.3524 | Aspect Loss: 26.6974
+Epoch 4 / 100 | Loss: 5.3057 | Mention Loss: 0.2944 | Aspect Loss: 5.0113
+Epoch 5 / 100 | Loss: 3.2748 | Mention Loss: 0.2212 | Aspect Loss: 3.0536

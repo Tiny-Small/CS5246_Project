@@ -1,0 +1,46 @@
+Job started at: Sun Mar 30 10:27:24 PM +08 2025
+Activating virtual environment...
+venv activated.
+Python version: 3.10.12 (main, Feb  4 2025, 14:57:36)
+Environment loaded successfully
+
+Evaluating on test set:
+[DEBUG] Total gold aspect spans: 976
+[DEBUG] Total gold opinion spans: 768
+[DEBUG] Total predicted aspect spans: 1477
+[DEBUG] Total predicted opinion spans: 1198
+
+Mention Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.4177    0.6322    0.5031       976
+           1     0.2646    0.4128    0.3225       768
+           2     0.9914    0.9815    0.9864     93936
+
+    accuracy                         0.9734     95680
+   macro avg     0.5579    0.6755    0.6040     95680
+weighted avg     0.9797    0.9734    0.9762     95680
+
+
+Triplet Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.1646    0.6235    0.2604        85
+           1     0.0848    0.3590    0.1373        39
+           2     0.1902    0.6458    0.2938        48
+           3     0.1111    0.3750    0.1714        16
+           4     0.0958    0.5161    0.1616        31
+           5     0.1538    0.3333    0.2105         6
+           6     0.0000    0.0000    0.0000         3
+           7     0.9691    0.5967    0.7386      1733
+
+    accuracy                         0.5895      1961
+   macro avg     0.2212    0.4312    0.2467      1961
+weighted avg     0.8728    0.5895    0.6785      1961
+
+
+Micro F1 on Triplet Extraction:
+Precision: 0.1365 | Recall: 0.1631 | F1: 0.1486
+Job completed.
+Job ended at: Mon Mar 31 04:24:49 PM +08 2025
+Job Duration: 17 hours 57 minutes 25 seconds
